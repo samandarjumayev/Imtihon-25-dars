@@ -175,6 +175,7 @@
   }
   #portfolio {
     height: 2000px !important;
+    max-width: 100% !important;
   }
   #portfolio .featured .featured-title .feat-title {
     text-align: center;
@@ -771,6 +772,43 @@
 }
 .footer .footer-info .footer-right .footer-link ul li:hover > a {
   color: var(--main-color);
+}
+.footer .tepaga {
+  position: fixed;
+  right: 7.5%;
+  bottom: 22px;
+  z-index: 11;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  cursor: pointer;
+  border-radius: 50%;
+  transform: rotate(-90deg);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.footer .tepaga a {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0521d5;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.footer .tepaga a:hover {
+  transform: scale(1.1);
+}
+.footer .tepaga a:active {
+  transition: 0.1s;
+  transform: scale(0.9);
+}
+.footer .tepaga a i {
+  color: #fff;
 }
 
 /*  Loader  */
