@@ -1,0 +1,22 @@
+@mixin loader-title-animation($kechikish){
+    animation-name: loading-title;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: $kechikish;
+
+    @keyframes loading-title {
+        0%{
+            opacity: 0;
+            transform: scale(0.5);
+        }
+        50% {
+            opacity: 1;
+            transform: scale(1);
+        }
+        100% {
+            display: none;
+            opacity: 0;
+        }
+    }
+}

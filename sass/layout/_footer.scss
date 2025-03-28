@@ -1,0 +1,86 @@
+.footer {
+    position: relative;
+    height: 350px;
+
+    .footer-info {
+        height: 100%;
+        border-top: 1px solid rgba(47, 47, 47, 0.264);
+        display: flex;
+        gap: 100px;
+
+        .footer-left {
+            width: 35%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding-right: 50px;
+            cursor: context-menu;
+
+            .footer-logo {
+                display: flex;
+                align-items: center;
+                gap: 7px;
+                color: var(--main-color);
+                font-size: 20px;
+            }
+
+            p {
+                color: rgb(67, 67, 67);
+                margin: 12px 0;
+                margin-bottom: 25px;
+            }
+
+            .footer-icons {
+                display: flex;
+                gap: 12px;
+                padding: 5px 0;
+
+                i {
+                    color: rgb(70, 70, 70);
+                    font-size: 20px;
+                    &:hover {
+                        color: var(--button-color);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .footer-right {
+            width: 65%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 90px 0;
+
+            .footer-link {
+                cursor: context-menu;
+
+                h3 {
+                    color: var(--main-color);
+                    margin: 11px 0;
+                    font-weight: 600;
+                }
+
+                ul{
+                    list-style-type: none;
+
+                    li {
+                        line-height: 27px;
+                        a{
+                            text-decoration: none;
+                            color: rgb(49, 49, 49);
+                        }
+
+                        &:hover>a {
+                            color: var(--main-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,101 @@
+#portfolio {
+    height: 1300px;
+    position: relative;
+    padding: 12px 0;
+
+    .featured {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        padding: 20px 0;
+        
+        .featured-title {
+            width: 50%;
+            height: 130px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: center;
+            justify-content: center;
+            cursor: context-menu;
+
+            h3 {
+                color: var(--main-color);
+                font-size: 30px;
+                line-height: 25px;
+                font-weight: 500;
+            }
+
+            p {
+                text-align: center;
+            }
+        }
+
+        .items {
+            height: calc(100% - 130px);
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 52px;
+
+            .item {
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+
+                .item-top{
+                    width: 100%;
+                    height: 70%;
+                    border-radius: 5px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+
+                .item-bottom {
+                    width: 100%;
+                    height: 30%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    cursor: context-menu;
+
+                    h3 {
+                        color: var(--main-color);
+                        margin-top: 10px;
+                        font-size: 22px;
+                    }
+                    p{
+                        color: rgb(51, 51, 51);
+                    }
+                    a{
+                        text-decoration: none;
+                        color: var(--main-color);
+                        padding: 2px 0;
+                        transition: 0.3s;
+                        cursor: pointer;
+
+                        i {
+                            transform: rotate(-45deg);
+                            transition: 0.4s;
+                        }
+                        &:hover {
+                            transform: scale(1.04);
+                        }
+                        &:hover>i {
+                            transform: rotate(0deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
