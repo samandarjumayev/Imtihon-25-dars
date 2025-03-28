@@ -2,6 +2,9 @@
     .container {
         width: 80%;
     }
+    .footer .tepaga{
+        left: 10% !important;
+    }
 
     .services {
         .service-product {
@@ -19,6 +22,80 @@
 // Other
 @media (max-width: 1024px) {
     .home {
+        
+        .header {
+            .nav {
+                .logo {
+                    i {
+                        font-size: 27px;
+                    }
+                    h2 {
+                        font-size: 33px;
+                    }
+                }
+
+                .items {
+                    label>i{
+                        display: block;
+                        cursor: pointer;
+                        transition: 0.2s;
+
+                        &:hover {
+                            color: #358ce8;
+                        }
+
+                        &:active {
+                            transform: scale(0.9);
+                            transition: 0.1s;
+                        }
+                    }
+
+                    input:checked + ul {
+                        right: 10%;
+                    }
+    
+                    ul {
+                        position: fixed;
+                        flex-direction: column;
+                        width: 190px;
+                        top: 70px;
+                        transition: 0.5s;
+                        right: -50%;
+                        z-index: 10;
+                        gap: 10px;
+
+                        li {
+                            background-color: #0076b65a;
+                            width: 100%;
+                            border-radius: 5px;
+                            transition: 0.4s;
+                            &:hover>a{
+                                color: var(--button-color);
+                            }
+                            &:active {
+                                transform: scale(0.9);
+                                transition: 0.1s;
+                            }
+                            &>a {
+                                width: 100%;
+                                display: inline-block;
+                                height: 100%;
+                                padding: 5px 12px;
+                                border-radius: 5px;
+                            }
+                        }
+
+                        li::after {
+                            background: linear-gradient(45deg, var(--button-color), rgb(255, 13, 178));
+                        }
+                    }
+                }
+    
+                .contact-btn {
+                    display: none;
+                }
+            }
+        }
 
         .mainly {
             .main-info {
@@ -64,83 +141,12 @@
     .container {
         width: 85%;
     }
+    .footer .tepaga{
+        left: 7.5% !important;
+    }
 
     .home {
         height: 750px !important;
-
-        .header {
-            .nav {
-                .logo {
-                    i {
-                        font-size: 27px;
-                    }
-                    h2 {
-                        font-size: 33px;
-                    }
-                }
-
-                .items {
-                    label>i{
-                        display: block;
-                        cursor: pointer;
-                        transition: 0.2s;
-
-                        &:hover {
-                            color: #358ce8;
-                        }
-
-                        &:active {
-                            transform: scale(0.9);
-                            transition: 0.1s;
-                        }
-                    }
-
-                    input:checked + ul {
-                        right: 7.5%;
-                    }
-    
-                    ul {
-                        position: fixed;
-                        flex-direction: column;
-                        width: 190px;
-                        top: 70px;
-                        transition: 0.5s;
-                        right: -50%;
-                        z-index: 10;
-                        gap: 10px;
-
-                        li {
-                            background-color: #0076b65a;
-                            width: 100%;
-                            border-radius: 5px;
-                            transition: 0.4s;
-                            &:hover>a{
-                                color: var(--button-color);
-                            }
-                            &:active {
-                                transform: scale(0.9);
-                                transition: 0.1s;
-                            }
-                            &>a {
-                                width: 100%;
-                                display: inline-block;
-                                height: 100%;
-                                padding: 5px 12px;
-                                border-radius: 5px;
-                            }
-                        }
-
-                        li::after {
-                            background: linear-gradient(45deg, var(--button-color), rgb(255, 13, 178));
-                        }
-                    }
-                }
-    
-                .contact-btn {
-                    display: none;
-                }
-            }
-        }
 
         .mainly {
             .main-info {
@@ -301,6 +307,9 @@
 @media (max-width: 768px) {
     .container {
         width: 90%;
+    }
+    .footer .tepaga{
+        left: 5% !important;
     }
 
     .home {

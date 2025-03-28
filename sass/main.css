@@ -29,43 +29,14 @@
   .container {
     width: 80%;
   }
+  .footer .tepaga {
+    left: 10% !important;
+  }
   .services .service-product .cards .card {
     height: 270px;
   }
 }
 @media (max-width: 1024px) {
-  .home .mainly .main-info .main-left h4 {
-    font-size: 14px;
-  }
-  .home .mainly .main-info .main-left h1 {
-    font-size: 40px;
-  }
-  .home .mainly .main-info .main-left p {
-    font-size: 14px;
-  }
-  .home .mainly .main-info .main-right .img-back {
-    width: 350px;
-    height: 350px;
-  }
-  .services {
-    height: 830px !important;
-  }
-  .services .service-product .building-title {
-    font-size: 30px;
-  }
-  .services .service-product .cards {
-    grid-template-columns: repeat(2, 1fr) !important;
-    grid-template-rows: repeat(2, 271px) !important;
-    gap: 22px;
-  }
-}
-@media (max-width: 900px) {
-  .container {
-    width: 85%;
-  }
-  .home {
-    height: 750px !important;
-  }
   .home .header .nav .logo i {
     font-size: 27px;
   }
@@ -85,7 +56,7 @@
     transition: 0.1s;
   }
   .home .header .nav .items input:checked + ul {
-    right: 7.5%;
+    right: 10%;
   }
   .home .header .nav .items ul {
     position: fixed;
@@ -122,6 +93,41 @@
   }
   .home .header .nav .contact-btn {
     display: none;
+  }
+  .home .mainly .main-info .main-left h4 {
+    font-size: 14px;
+  }
+  .home .mainly .main-info .main-left h1 {
+    font-size: 40px;
+  }
+  .home .mainly .main-info .main-left p {
+    font-size: 14px;
+  }
+  .home .mainly .main-info .main-right .img-back {
+    width: 350px;
+    height: 350px;
+  }
+  .services {
+    height: 830px !important;
+  }
+  .services .service-product .building-title {
+    font-size: 30px;
+  }
+  .services .service-product .cards {
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: repeat(2, 271px) !important;
+    gap: 22px;
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    width: 85%;
+  }
+  .footer .tepaga {
+    left: 7.5% !important;
+  }
+  .home {
+    height: 750px !important;
   }
   .home .mainly .main-info {
     flex-direction: column-reverse;
@@ -248,6 +254,9 @@
 @media (max-width: 768px) {
   .container {
     width: 90%;
+  }
+  .footer .tepaga {
+    left: 5% !important;
   }
   .home {
     height: 350px;
@@ -774,8 +783,8 @@
   color: var(--main-color);
 }
 .footer .tepaga {
-  position: fixed;
-  right: 7.5%;
+  position: sticky;
+  left: 15%;
   bottom: 22px;
   z-index: 11;
   width: 42px;
@@ -788,6 +797,7 @@
   border-radius: 50%;
   transform: rotate(-90deg);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 20px 0;
 }
 .footer .tepaga a {
   width: 100%;
@@ -796,7 +806,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #0521d5;
+  background-color: rgba(5, 33, 213, 0.6588235294);
   text-decoration: none;
   transition: 0.4s;
 }
